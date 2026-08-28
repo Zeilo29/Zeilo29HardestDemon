@@ -1,9 +1,153 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Salut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo de l'onglet -->
+    <link rel="icon" type="image/jpeg" href="pc2J1.jpg">
+
+    <title>Zeilo29</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #181818;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* BARRE DU HAUT */
+        .top-bar {
+            width: 100%;
+            height: 70px;
+            background-color: #101010;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .scroll {
+            display: flex;
+            white-space: nowrap;
+            animation: defilement 10s linear infinite;
+        }
+
+        .scroll span {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        @keyframes defilement {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* CONTENU */
+        .content {
+            flex: 1;
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        .welcome {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+
+        /* FOOTER */
+        .footer {
+            width: 100%;
+            padding: 15px 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #121212;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .welcome {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>salut</h1>
+
+    <!-- BARRE DU HAUT -->
+    <div class="top-bar">
+        <div class="scroll">
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+            <span>Zeilo29</span>
+        </div>
+    </div>
+
+    <!-- CONTENU -->
+    <main class="content">
+
+        <div class="welcome">
+            Zeilo29 Hardest Demon !
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="https://discord.gg/bsVQYbwTT" target="_blank">
+            Join the Discord !
+        </a>
+    </footer>
+
 </body>
 </html>
+```
