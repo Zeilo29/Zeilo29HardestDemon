@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zeilo29 Extreme Demon list !</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Bande grise du haut */
+        .top-bar {
+            height: 52px;
+            background-color: #202020;
+            border-bottom: 1px solid #111;
+
+            overflow: hidden;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+        }
+
+        /* Défilement des Zeilo29 */
+        .scroll-container {
+            display: flex;
+            width: max-content;
+            animation: defilement 12s linear infinite;
+        }
+
+        .scroll-text {
+            font-size: 24px;
+            font-weight: bold;
+            white-space: nowrap;
+            margin-right: 80px;
+        }
+
+        @keyframes defilement {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Titre */
+        .title {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 12px;
+            background-color: #0d0d0d;
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Conteneur des Extreme Demons */
+        .demon-container {
+            width: 85%;
+            margin: 70px auto 0;
+            padding: 28px 20px;
+            background-color: #0d0d0d;
+            border-radius: 35px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Chaque Demon */
+        .demon {
+            width: 18%;
+            min-width: 120px;
+        }
+
+        .demon-name {
+            font-size: 16px;
+            margin-bottom: 15px;
+            white-space: nowrap;
+        }
+
+        /* Symbole interdit */
+        .no-level {
+            width: 74px;
+            height: 74px;
+            margin: auto;
+            border: 7px solid red;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .no-level::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 82px;
+            background-color: red;
+            left: 27px;
+            top: -10px;
+            transform: rotate(-45deg);
+            border-radius: 5px;
+        }
+
+        .attempt {
+            margin-top: 22px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Current Hardest */
+        .current-hardest {
+            margin-top: 67px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #101010;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Bande du haut avec les clones de Zeilo29 -->
+    <div class="top-bar">
+
+        <div class="scroll-container">
+
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+
+            <!-- Clones supplémentaires pour la boucle -->
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+            <div class="scroll-text">Zeilo29</div>
+
+        </div>
+
+    </div>
+
+    <!-- Titre -->
+    <div class="title">
+        Zeilo29 Extreme Demon list !
+    </div>
+
+    <!-- Extreme Demons -->
+    <div class="demon-container">
+
+        <div class="demon">
+            <div class="demon-name">Extreme Demon 1# :</div>
+            <div class="no-level"></div>
+            <div class="attempt">Attempt : 0</div>
+        </div>
+
+        <div class="demon">
+            <div class="demon-name">Extreme Demon 2# :</div>
+            <div class="no-level"></div>
+            <div class="attempt">Attempt : 0</div>
+        </div>
+
+        <div class="demon">
+            <div class="demon-name">Extreme Demon 3# :</div>
+            <div class="no-level"></div>
+            <div class="attempt">Attempt : 0</div>
+        </div>
+
+        <div class="demon">
+            <div class="demon-name">Extreme Demon 4# :</div>
+            <div class="no-level"></div>
+            <div class="attempt">Attempt : 0</div>
+        </div>
+
+        <div class="demon">
+            <div class="demon-name">Extreme Demon 5# :</div>
+            <div class="no-level"></div>
+            <div class="attempt">Attempt : 0</div>
+        </div>
+
+    </div>
+
+    <!-- Current Hardest -->
+    <div class="current-hardest">
+        Current Hardest : Denouement
+    </div>
+
+    <!-- Discord -->
+    <footer>
+        <a href="https://discord.gg/hR2Q8rNRA" target="_blank">
+            Join the Discord
+        </a>
+    </footer>
+
+</body>
+</html>
