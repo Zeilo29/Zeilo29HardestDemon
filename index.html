@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,17 +18,16 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
+            font-weight: bold;
         }
 
         /* Bande grise du haut */
         .top-bar {
-            height: 52px;
+            height: 85px;
             background-color: #202020;
-            border-bottom: 1px solid #111;
-
+            border-bottom: 2px solid #111;
             overflow: hidden;
             position: relative;
-
             display: flex;
             align-items: center;
         }
@@ -40,17 +40,17 @@
         }
 
         .scroll-text {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 40px;
+            font-weight: 900;
             white-space: nowrap;
-            margin-right: 80px;
+            margin-right: 100px;
+            letter-spacing: 1px;
         }
 
         @keyframes defilement {
             from {
                 transform: translateX(0);
             }
-
             to {
                 transform: translateX(-50%);
             }
@@ -59,19 +59,19 @@
         /* Titre */
         .title {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 12px;
+            margin-top: 30px;
+            padding: 15px 22px;
             background-color: #0d0d0d;
-            border-radius: 15px;
-            font-size: 25px;
-            font-weight: bold;
+            border-radius: 18px;
+            font-size: 34px;
+            font-weight: 900;
         }
 
         /* Conteneur des Extreme Demons */
         .demon-container {
-            width: 85%;
+            width: 90%;
             margin: 70px auto 0;
-            padding: 28px 20px;
+            padding: 35px 25px;
             background-color: #0d0d0d;
             border-radius: 35px;
 
@@ -88,17 +88,18 @@
         }
 
         .demon-name {
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 20px;
             white-space: nowrap;
         }
 
         /* Symbole interdit */
         .no-level {
-            width: 74px;
-            height: 74px;
+            width: 90px;
+            height: 90px;
             margin: auto;
-            border: 7px solid red;
+            border: 9px solid red;
             border-radius: 50%;
             position: relative;
         }
@@ -106,26 +107,27 @@
         .no-level::after {
             content: "";
             position: absolute;
-            width: 8px;
-            height: 82px;
+            width: 10px;
+            height: 100px;
             background-color: red;
-            left: 27px;
-            top: -10px;
+            left: 31px;
+            top: -14px;
             transform: rotate(-45deg);
             border-radius: 5px;
         }
 
         .attempt {
-            margin-top: 22px;
-            font-weight: bold;
-            font-size: 15px;
+            margin-top: 25px;
+            font-weight: 900;
+            font-size: 20px;
         }
 
         /* Current Hardest */
         .current-hardest {
-            margin-top: 67px;
-            font-size: 25px;
-            font-weight: bold;
+            margin-top: 75px;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
         }
 
         /* Footer */
@@ -134,9 +136,8 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 30px;
+            height: 40px;
             background-color: #101010;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -145,7 +146,8 @@
         footer a {
             color: white;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 17px;
+            font-weight: 900;
         }
 
         footer a:hover {
@@ -158,7 +160,6 @@
 
     <!-- Bande du haut avec les clones de Zeilo29 -->
     <div class="top-bar">
-
         <div class="scroll-container">
 
             <div class="scroll-text">Zeilo29</div>
@@ -170,7 +171,7 @@
             <div class="scroll-text">Zeilo29</div>
             <div class="scroll-text">Zeilo29</div>
 
-            <!-- Clones supplémentaires pour la boucle -->
+            <!-- Clones supplémentaires -->
             <div class="scroll-text">Zeilo29</div>
             <div class="scroll-text">Zeilo29</div>
             <div class="scroll-text">Zeilo29</div>
@@ -181,7 +182,6 @@
             <div class="scroll-text">Zeilo29</div>
 
         </div>
-
     </div>
 
     <!-- Titre -->
