@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,7 +18,6 @@
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            font-weight: bold;
         }
 
         /* Bande grise du haut */
@@ -26,8 +25,10 @@
             height: 85px;
             background-color: #202020;
             border-bottom: 2px solid #111;
+
             overflow: hidden;
             position: relative;
+
             display: flex;
             align-items: center;
         }
@@ -36,21 +37,31 @@
         .scroll-container {
             display: flex;
             width: max-content;
-            animation: defilement 12s linear infinite;
+            animation: defilement 16s linear infinite;
         }
 
         .scroll-text {
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 900;
             white-space: nowrap;
             margin-right: 100px;
-            letter-spacing: 1px;
+
+            color: white;
+            letter-spacing: 2px;
+
+            text-shadow:
+                2px 2px 0px #000,
+                -2px -2px 0px #000,
+                3px 3px 8px rgba(0, 0, 0, 0.8);
+
+            -webkit-text-stroke: 0.8px white;
         }
 
         @keyframes defilement {
             from {
                 transform: translateX(0);
             }
+
             to {
                 transform: translateX(-50%);
             }
@@ -59,19 +70,19 @@
         /* Titre */
         .title {
             display: inline-block;
-            margin-top: 30px;
-            padding: 15px 22px;
+            margin-top: 20px;
+            padding: 10px 12px;
             background-color: #0d0d0d;
-            border-radius: 18px;
-            font-size: 34px;
-            font-weight: 900;
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: bold;
         }
 
         /* Conteneur des Extreme Demons */
         .demon-container {
-            width: 90%;
+            width: 85%;
             margin: 70px auto 0;
-            padding: 35px 25px;
+            padding: 28px 20px;
             background-color: #0d0d0d;
             border-radius: 35px;
 
@@ -88,18 +99,17 @@
         }
 
         .demon-name {
-            font-size: 20px;
-            font-weight: 900;
-            margin-bottom: 20px;
+            font-size: 16px;
+            margin-bottom: 15px;
             white-space: nowrap;
         }
 
         /* Symbole interdit */
         .no-level {
-            width: 90px;
-            height: 90px;
+            width: 74px;
+            height: 74px;
             margin: auto;
-            border: 9px solid red;
+            border: 7px solid red;
             border-radius: 50%;
             position: relative;
         }
@@ -107,27 +117,26 @@
         .no-level::after {
             content: "";
             position: absolute;
-            width: 10px;
-            height: 100px;
+            width: 8px;
+            height: 82px;
             background-color: red;
-            left: 31px;
-            top: -14px;
+            left: 27px;
+            top: -10px;
             transform: rotate(-45deg);
             border-radius: 5px;
         }
 
         .attempt {
-            margin-top: 25px;
-            font-weight: 900;
-            font-size: 20px;
+            margin-top: 22px;
+            font-weight: bold;
+            font-size: 15px;
         }
 
         /* Current Hardest */
         .current-hardest {
-            margin-top: 75px;
-            font-size: 32px;
-            font-weight: 900;
-            letter-spacing: 0.5px;
+            margin-top: 67px;
+            font-size: 25px;
+            font-weight: bold;
         }
 
         /* Footer */
@@ -136,8 +145,9 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 40px;
+            height: 30px;
             background-color: #101010;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,8 +156,7 @@
         footer a {
             color: white;
             text-decoration: none;
-            font-size: 17px;
-            font-weight: 900;
+            font-size: 13px;
         }
 
         footer a:hover {
@@ -160,6 +169,7 @@
 
     <!-- Bande du haut avec les clones de Zeilo29 -->
     <div class="top-bar">
+
         <div class="scroll-container">
 
             <div class="scroll-text">Zeilo29</div>
@@ -182,6 +192,7 @@
             <div class="scroll-text">Zeilo29</div>
 
         </div>
+
     </div>
 
     <!-- Titre -->
@@ -238,3 +249,4 @@
 
 </body>
 </html>
+```
